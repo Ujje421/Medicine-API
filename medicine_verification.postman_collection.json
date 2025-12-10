@@ -1,0 +1,41 @@
+{
+  "info": {
+    "_postman_id": "b8d0ee09-7c3d-4d32-bc3b-9fd5bf2f91aa",
+    "name": "Medicine Verification API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Postman collection for checking if a medicine name exists."
+  },
+  "item": [
+    {
+      "name": "Verify Medicine",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/verify_medicine?name={{medicine_name}}",
+          "host": [
+            "http://127.0.0.1"
+          ],
+          "port": "5000",
+          "path": [
+            "verify_medicine"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "{{medicine_name}}",
+              "description": "Name of the medicine to verify"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "medicine_name",
+      "value": "augmentin 625 duo tablet"
+    }
+  ]
+}
